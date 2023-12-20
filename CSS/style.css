@@ -1,0 +1,164 @@
+:root
+{
+  --primarycolor:#ffffff;
+  --secondarycolor: #6422ff
+  --lightcolor: #ffffff;
+  --bgcolor-1: #1c1717;
+  --bgcolor-2: #4f00e2;
+  --bgcoloer-3:#30534f;
+  --padding: 8%;
+}
+html{
+  font-size: 16px;
+  color: var(--lightcolor);
+}
+.home{
+  width:100%;
+  height: 100vh;
+  background-image: url(images/saec1.jpg);
+  background-size:cover;
+  background-repeat:no-repeat ;
+  display: flex;
+  flex-direction: column;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2{
+  font-size: 2.2rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+}
+nav{
+  padding-top: 2.8rem;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span{
+  color: var(--primarycolor);
+}
+nav ul li {
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.8rem 1.5rem;
+}
+nav ul li a {
+  text-align: center;
+  color: aqua;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+nav ul li a:hover{
+  color: var(--primarycolor);
+}
+.content{
+ flex-grow: 1;
+ padding:var(--padding);
+ align-items:end;
+ justify-content: space-between;
+ text-align: left;
+}
+.content-texts{
+  position: relative;
+  bottom: 70px;
+}
+h1{
+  font-size: 4.65rem;
+  margin: 1.7rem 5;
+}
+h3{
+  font-size: 2rem;
+  margin-bottom: 3.5rem;
+}
+h4{
+  font-size: 2.25rem;
+  letter-spacing: 0.12rem;
+  color: var(--primarycolor);
+}
+.h5{
+  font-size: 1.37rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+.social{
+  margin-top: 3.5rem;
+}
+.social img{
+  margin-right: 2rem;
+  width: 2.5rem;
+}
+.social img:hover{
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+.home .container-images{
+  width: 45%;
+  height: 90%;
+  position: relative;
+  align-self: flex-end;
+}
+.home .container-images img{
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 1s ,left 1s ;
+}
+.home .container-images:hover .shape{
+  bottom: 40px;
+}
+.home .container-images:hover .pic{
+  left: 45%;
+}
+.about{
+  width:100%;
+  height: 100vh;
+  background-image: url(images/saec2.png);
+  background-size: cover;
+  background-color: var(--bgcolor-2);
+  padding:2rem var(--padding);
+  text-align: left;
+}
+
+.about.container-texts{
+  font-size: 2.5rem;
+  width: 35%;
+}
+.skills{
+  background-color: var(--bgcolor-1);
+  padding:2rem var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .container-images{
+  width: 35%;
+}
+.skills .container-images img{
+width: 90%;
+}
+.skills .container-skills{
+  width: 40%;
+}
+.content-skills{
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill{
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin: 0 3rem 3rem 0;
+}
+footer{
+  text-align: center;
+}
